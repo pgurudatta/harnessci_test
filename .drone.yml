@@ -1,18 +1,16 @@
 kind: pipeline
 type: exec
-name: default
+name: SCAN
 
 platform:
   os: linux
   arch: amd64
 
 steps:
-- name: Install skencli
+#Should be run during CI in the Pipeline
+- name: SAST
   commands:
-  - pip install --upgrade skencli
-- name: Run skencli
-  commands:
-  - skencli
+  - docker run --rm --mount type=bind,source=$PWD,target=/scan dops-registry.fortinet-us.com/fortidevsecops/fdevsec_sast:latest
 
 trigger:
   branch:
