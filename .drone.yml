@@ -1,6 +1,6 @@
 kind: pipeline
 type: docker
-name: drone
+name: drone/drone
 
 platform:
   os: linux
