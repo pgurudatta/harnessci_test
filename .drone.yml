@@ -9,16 +9,10 @@ platform:
 steps:
 #Should be run during CI in the Pipeline
 - name: SAST
-  volumes:
-  - name: dockersock
-    path: /var/run/docker.sock
   image: registry.fortidevsec.forticloud.com/fdevsec_sast
   commands:
   - docker run --rm --add-host fortidevsec.forticloud.com:10.34.160.80 --mount type=bind,source="$PWD",target=/scan registry.fortidevsec.forticloud.com/fdevsec_sast:latest
-volumes:
-- name: dockersock
-  host:
-    path: /var/run/docker.sock
+
 trigger:
   branch:
   - main
