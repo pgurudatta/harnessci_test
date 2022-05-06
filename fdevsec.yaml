@@ -1,14 +1,4 @@
-orgid: 202f23d6-8ada-4ab9-9cd3-23a262cfd21f
-appid: 2ddf4a03-f5ce-47db-a9a5-377630d3667d
-
-# optional Param section start
-#buildtool: travis # optional param, values=jenkins|travis
-scanner: sast # optional param, default is ALL
-language: ruby # optional param, default is Auto-Detect
-
-#variables:
-#  DAST_URL: https://github.com/pgurudatta/test_travis_circle # optional param 
-#  DAST_FULL_SCAN: true #true|false
-
-# optional Param section end
-# end of file
+version: v1
+id:
+  org: 202f23d6-8ada-4ab9-9cd3-23a262cfd21f
+  app: 2ddf4a03-f5ce-47db-a9a5-377630d3667d
