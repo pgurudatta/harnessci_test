@@ -1,7 +1,7 @@
 ---
 kind: pipeline
 type: exec
-name: drone
+name: default
 
 platform:
   os: linux
