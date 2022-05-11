@@ -1,6 +1,6 @@
 ---
 kind: pipeline
-type: docker
+type: exec
 name: drone
 
 platform:
@@ -10,6 +10,5 @@ platform:
 steps:
 #Should be run during CI in the Pipeline
 - name: SAST
-  image: registry.fortidevsec.forticloud.com/fdevsec_sast:latest
   commands:
   - hostname
