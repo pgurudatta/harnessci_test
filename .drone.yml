@@ -1,10 +1,11 @@
 ---
 kind: pipeline
-type: exec
+type: docker
 name: default
 
 steps:
 #Should be run during CI in the Pipeline
 - name: SAST
+  image: drone/drone-runner-docker:1
   commands:
-  - echo hello-world
+  - docker ps
