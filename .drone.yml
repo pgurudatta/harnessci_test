@@ -3,14 +3,8 @@ kind: pipeline
 type: exec
 name: default
 
-platform:
-  os: linux
-  arch: amd64
-
 steps:
 #Should be run during CI in the Pipeline
 - name: SAST
   commands:
   - echo hello-world
-
-...
