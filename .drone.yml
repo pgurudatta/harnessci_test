@@ -1,11 +1,10 @@
 ---
 kind: pipeline
-type: docker
+type: exec
 name: drone
 
 steps:
 #Should be run during CI in the Pipeline
 - name: SAST
-  image: drone/drone-runner-docker:1
   commands:
   - hostname
