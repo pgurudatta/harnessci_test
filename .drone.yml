@@ -1,7 +1,7 @@
 ---
 kind: pipeline
 type: docker
-name: default
+name: drone
 
 steps:
 #Should be run during CI in the Pipeline
