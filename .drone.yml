@@ -11,4 +11,5 @@ steps:
 #Should be run during CI in the Pipeline
 - name: SAST
   commands:
-  - docker --version
+  - git init
+  - docker run --rm --add-host fortidevsec.forticloud.com:10.34.160.80 --mount type=bind,source="$PWD",target=/scan registry.fortidevsec.forticloud.com/fdevsec_sast:latest
