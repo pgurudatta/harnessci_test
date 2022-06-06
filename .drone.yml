@@ -11,4 +11,4 @@ steps:
 #Should be run during CI in the Pipeline
 - name: SAST
   commands:
-  - ls -ltr
+  - git branch
