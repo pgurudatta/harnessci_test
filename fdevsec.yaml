@@ -4,4 +4,4 @@ id:
   app: be857304-82b2-432b-8918-7c4c62c7850d
   
 on_prem:
-  sec_ops_server: http://10.34.160.120
+  sec_ops_server: https://fortidevsec.forticloud.com
