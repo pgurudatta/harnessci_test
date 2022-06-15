@@ -12,10 +12,10 @@ steps:
 - name: SAST
   commands:
   - whoami
-  - chmod -R 777 /tmp
   - docker run --rm --add-host fortidevsec.forticloud.com:10.34.160.80 --mount type=bind,source="$PWD",target=/scan registry.fortidevsec.forticloud.com/fdevsec_sast:latest
 
 #docker run --rm --add-host fortidevsec.forticloud.com:10.34.160.80 --mount type=bind,source="$PWD",target=/scan registry.fortidevsec.forticloud.com/fdevsec_sast:latest
 #- echo "$PWD"
  # - chmod 777 /tmp/*
   #- ls -l /tmp
+  #- chmod -R 777 /tmp
